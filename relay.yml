@@ -1,0 +1,10 @@
+version: "v1"
+key: your-secret-key # will be encrypted on startup
+secret: your-secret  # will be encrypted on startup
+buckets:
+  - docker-compose-update-on-git-push
+relayer:
+  type: exec  
+  timeout: 300 # timeout in seconds
+  command: bash
+  commandArgs: [ '/Users/karolis/Projects/docker-compose-update-on-git-push/update.sh' ]
