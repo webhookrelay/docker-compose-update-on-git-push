@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: "karolisr/python-counter:0.1.0"
+    image: "karolisr/python-counter:0.2.0"
     ports:
       - "5000:5000"
   redis:
